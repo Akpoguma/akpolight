@@ -39,8 +39,8 @@ class TenantSetup
 
   def create_site_settings
     SiteSetting.create! [
-      { setting: Setting.find_by(name: 'PrimaryColor'), value: '#467fcf', provider: @provider },
-      { setting: Setting.find_by(name: 'PrimaryColorLight'), value: '#e8eff9', provider: @provider },
+      { setting: Setting.find_by(name: 'PrimaryColor'), value: '#000000', provider: @provider },
+      { setting: Setting.find_by(name: 'PrimaryColorLight'), value: '#20074', provider: @provider },
       { setting: Setting.find_by(name: 'PrimaryColorDark'), value: '#316cbe', provider: @provider },
       { setting: Setting.find_by(name: 'BrandingImage'),
         value: ActionController::Base.helpers.image_path('bbb_logo.png'),

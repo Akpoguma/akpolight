@@ -180,8 +180,8 @@ RSpec.describe Api::V1::Admin::TenantsController, type: :controller do
   def create_site_settings(providers)
     providers.each do |provider|
       SiteSetting.create! [
-        { setting: Setting.find_by(name: 'PrimaryColor'), value: '#467fcf', provider: },
-        { setting: Setting.find_by(name: 'PrimaryColorLight'), value: '#e8eff9', provider: },
+        { setting: Setting.find_by(name: 'PrimaryColor'), value: '#000000', provider: },
+        { setting: Setting.find_by(name: 'PrimaryColorLight'), value: '#e20074', provider: },
         { setting: Setting.find_by(name: 'PrimaryColorDark'), value: '#316cbe', provider: },
         { setting: Setting.find_by(name: 'BrandingImage'),
           value: ActionController::Base.helpers.image_path('bbb_logo.png'),
