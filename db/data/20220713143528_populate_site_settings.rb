@@ -21,7 +21,7 @@ class PopulateSiteSettings < ActiveRecord::Migration[7.0]
     image_path = begin
       ActionController::Base.helpers.image_path('bbb_logo.png')
     rescue StandardError
-      'https://github.com/bigbluebutton/greenlight/blob/master/app/assets/images/bbb_logo.png'
+      'https://github.com/Akpoguma/akpolight/blob/main/app/assets/images/bbb_logo.png'
     end
 
     SiteSetting.create! [
